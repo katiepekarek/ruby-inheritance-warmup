@@ -12,7 +12,7 @@ class Person
   end
 end
 
-class Aussie
+class Aussie < Person
   def type_of_person
     "an Aussie"
   end
@@ -21,21 +21,22 @@ class Aussie
     "G'day mate!"
   end
 
-  def description
-    "When #{type_of_person} greets you, they say \"#{greeting}\""
-  end
 end
 
-class Kiwi
+class Kiwi < Aussie
   def type_of_person
     "a Kiwi"
   end
 
-  def greeting
-    "G'day mate!"
+end
+
+class Irish < Person
+  def type_of_person
+    "an Irishman"
   end
 
-  def description
-    "When #{type_of_person} greets you, they say \"#{greeting}\""
+  def greeting
+    "Top'o the mornin'!"
   end
+
 end
